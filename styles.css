@@ -1,0 +1,85 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.hero {
+    background: url(recipe_header.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.content-section {
+    display: none;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.recipe-img {
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.btn-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+h6 {
+    font-weight: bold !important;
+    text-decoration: underline;
+}
+.success-message {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold !important;
+    font-size: 1.5rem;
+}
+.accordion-button.custom-bg-dark {
+    background-color: #343a40;
+    color: white;
+}
+.accordion-button.custom-bg-dark:not(.collapsed) {
+    background-color: #23272b;
+    color: white;
+}
+.accordion-button.custom-bg-dark:focus {
+    box-shadow: none;
+}
+.card-title {
+    font-weight: bold !important;
+}
+.accordion-item, .card-body {
+    background-color: #343a40 !important;
+    color: #fff;
+}

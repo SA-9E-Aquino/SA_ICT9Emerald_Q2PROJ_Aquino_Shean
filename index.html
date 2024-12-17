@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="showSection('home')" class="bg-dark">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-white" href="#">My Recipe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="list_recipe.html">List Of Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="create_recipe.html">Submit Recipe</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome To My Recipe</h1>
+    <p>Explore and share your favorite recipes!</p>
+</div>
+
+<!-- Content Sections -->
+<div class="container mt-4 content-section text-white" id="home">
+    <h4>All Time Favorites</h4>
+    <!-- Carousel Section -->
+    <div id="imageCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="adobo_800x400.jpeg" class="d-block w-100" alt="Adobo">
+            </div>
+            <div class="carousel-item">
+                <img src="tapsilog_800x400.jpeg" class="d-block w-100" alt="Tapsilog">
+            </div>
+            <div class="carousel-item">
+                <img src="tinola_800x400.jpeg" class="d-block w-100" alt="Tinola">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span style="font-size: 5rem; font-weight: bold; color: black;" aria-hidden="true">&lt&lt&lt&lt</span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span style="font-size: 5rem; font-weight: bold; color: black;" aria-hidden="true">&gt&gt&gt&gt</span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center mt-4">
+    <p>&copy; 2024 Recipe App. All rights reserved.</p>
+</footer>
+</body>
+</html>
